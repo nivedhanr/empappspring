@@ -24,6 +24,20 @@ export class AddempComponent {
       (response:any)=>
       {
         console.log(response)
+        if (response.status == "success") {
+          alert("Course added successfully")
+          this.empcode=""
+          this.name=""
+          this.designation=""
+          this.salary=""
+          this.company=""
+          this.mobile=""
+          this.username=""
+          this.password=""
+         
+        }else{
+          alert("Something went wrong")
+        }
       }
     )
   }
