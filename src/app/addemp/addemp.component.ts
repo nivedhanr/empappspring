@@ -25,7 +25,7 @@ export class AddempComponent {
       {
         console.log(response)
         if (response.status == "success") {
-          alert("Course added successfully")
+          alert("Employee added successfully")
           this.empcode=""
           this.name=""
           this.designation=""
