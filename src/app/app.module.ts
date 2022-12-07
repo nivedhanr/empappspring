@@ -8,7 +8,8 @@ import { ViewempComponent } from './viewemp/viewemp.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import{HttpClientModule} from '@angular/common/http'
+import{HttpClientModule} from '@angular/common/http';
+import { ApisearchComponent } from './apisearch/apisearch.component'
 const myRoute:Routes=[
   {
     path:"",
@@ -17,6 +18,10 @@ const myRoute:Routes=[
   {
     path:"view",
     component:ViewempComponent
+  },
+  {
+    path:"search",
+    component:ApisearchComponent
   }
 ]
 @NgModule({
@@ -24,7 +29,8 @@ const myRoute:Routes=[
     AppComponent,
     AddempComponent,
     ViewempComponent,
-    NavbarComponent
+    NavbarComponent,
+    ApisearchComponent
   ],
   imports: [
     BrowserModule,
