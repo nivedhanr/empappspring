@@ -55,9 +55,8 @@ export class ApisearchComponent {
         console.log(reponse)
         if (reponse.status=="success") {
           alert("deleted successfully")
-          this.route.navigate(['/search'])
-        } else {
-          alert("not deleted")
+          this. readValues=[]
+          this.route.navigate(['/view'])
         }
       }
     )
